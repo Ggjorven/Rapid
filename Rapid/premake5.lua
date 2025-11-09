@@ -74,7 +74,7 @@ project "Rapid"
 
 	filter "action:xcode*"
 		-- Note: XCode only needs the full pchheader path
-		pchheader "Source/Obsidia/rppch.h"
+		pchheader "Source/Rapid/rppch.h"
 
 		-- Note: If we don't add the header files to the externalincludedirs
 		-- we can't use <angled> brackets to include files.

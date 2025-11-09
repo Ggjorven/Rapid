@@ -7,7 +7,7 @@
 #include <Obsidian/Core/Window.hpp>
 
 #include <Obsidian/Renderer/Device.hpp>
-#include <Obsidian/Renderer/SwapChain.hpp>
+#include <Obsidian/Renderer/Swapchain.hpp>
 
 #include <cstdint>
 #include <vector>

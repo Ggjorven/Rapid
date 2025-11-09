@@ -1,5 +1,5 @@
-#include <Obsidia/Core/Core.hpp>
-#include <Obsidia/Core/Logger.hpp>
+#include <Rapid/Core/Core.hpp>
+#include <Rapid/Core/Logger.hpp>
 
 using namespace Rapid;
 
