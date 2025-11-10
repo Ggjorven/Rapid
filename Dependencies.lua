@@ -98,8 +98,8 @@ append_to_table(Dependencies.Rapid.LibDir, Dependencies.Photon.LibDir)
 
 -- LibNames
 append_to_table(Dependencies.Rapid.LibName, "Rapid")
-append_to_table(Dependencies.Rapid.LibName, "Obsidian")
-append_to_table(Dependencies.Rapid.LibName, "Photon")
+append_to_table(Dependencies.Rapid.LibName, Dependencies.Obsidian.LibName)
+append_to_table(Dependencies.Rapid.LibName, Dependencies.Photon.LibName)
 
 -- PostBuildCommands
 append_to_table(Dependencies.Rapid.PostBuildCommands, Dependencies.Obsidian.PostBuildCommands)

@@ -36,6 +36,7 @@ project "Runtime"
 
 	includedirs(Dependencies.Rapid.IncludeDir) -- Note: Includes Source/Rapid
 	libdirs(Dependencies.Rapid.LibDir)
+	links(Dependencies.Rapid.LibName)
 	postbuildcommands(Dependencies.Rapid.PostBuildCommands)
 	defines(Dependencies.Rapid.Defines)
 
@@ -43,8 +44,6 @@ project "Runtime"
 		systemversion "latest"
 		staticruntime "on"
 		editandcontinue "off"
-
-		links("Rapid")
 
         defines
         {
@@ -55,16 +54,9 @@ project "Runtime"
 		systemversion "latest"
 		staticruntime "on"
 
-		-- Note: On linux, it needs to relink all dependencies
-		links("Rapid")
-		links(Dependencies.Obsidian.LibName)
-		links(Dependencies.Photon.LibName)
-
     filter "system:macosx"
 		systemversion(MacOSVersion)
 		staticruntime "on"
-
-		links("Rapid")
 
 	filter "action:vs*"
 		buildoptions { "/Zc:preprocessor" }

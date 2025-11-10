@@ -62,9 +62,6 @@ project "Rapid"
 		-- Note: For some reason gmake, now also needs full pchheader path
 		pchheader "Source/Rapid/rppch.h"
 
-		links(Dependencies.Obsidian.LibName)
-		links(Dependencies.Photon.LibName)
-
     filter "system:macosx"
 		systemversion(MacOSVersion)
 		staticruntime "on"
